@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_switza"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/switzerland"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-9dp" />
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="กรุณาเลือกประเทศ"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_switza" />
+
+    <TextView
+        android:id="@+id/tv_history"
+        android:layout_width="322dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_header" />
+
+    <Button
+        android:id="@+id/btn_swit"
+        android:layout_width="101dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="16dp"
+        android:text="สวิตเธอร์แลนด์"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_history"
+        tools:text="@string/btn_swit" />
+
+    <Button
+        android:id="@+id/btn_sing"
+        android:layout_width="80dp"
+        android:layout_height="53dp"
+        android:text="สิงคโปร์"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_swit"
+        app:layout_constraintStart_toEndOf="@+id/btn_swit"
+        app:layout_constraintTop_toTopOf="@+id/btn_swit"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="@string/btn_sing" />
+
+    <Button
+        android:id="@+id/btn_fan"
+        android:layout_width="73dp"
+        android:layout_height="56dp"
+        android:text="ฝรั่งเศส"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_sing"
+        app:layout_constraintStart_toEndOf="@+id/btn_sing"
+        app:layout_constraintTop_toTopOf="@+id/btn_sing"
+        app:layout_constraintVertical_bias="0.333"
+        tools:text="@string/btn_fan" />
+
+    <Button
+        android:id="@+id/btn_dubai"
+        android:layout_width="79dp"
+        android:layout_height="55dp"
+        android:text="ดูไบ"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_fan"
+        app:layout_constraintEnd_toEndOf="@+id/tv_history"
+        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintStart_toEndOf="@+id/btn_fan"
+        app:layout_constraintTop_toTopOf="@+id/btn_fan"
+        tools:text="@string/btn_dubai" />
+</androidx.constraintlayout.widget.ConstraintLayout>
